@@ -1,5 +1,7 @@
 # <img width="50" height="50" alt="logo" src="https://github.com/user-attachments/assets/66af7fd3-8047-452b-b139-2794654a03d8" />Turkcell SignDesk - İşaret Dili Uygulaması
 
+- 🌐 **Web Sitesi Linkimiz**: https://www.signdesk.live
+
 **İşitme engelli bireylerin iletişimini kolaylaştırmak için geliştirilmiş, gerçek zamanlı işaret dili tanıma ve çeviri uygulaması.**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
