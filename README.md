@@ -116,6 +116,7 @@
 
 ```
 - Metin giriş alanı
+- Yazılan metni indirme alanı
 - İşaret dili animasyonları
 - Hız kontrolü
 ```
