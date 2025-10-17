@@ -1,0 +1,131 @@
+# İşaret Dili Tanıma Projesi - Root .gitignore
+
+# Environment Variables (Hassas bilgiler)
+.venv/
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+
+# Model Files (Büyük dosyalar - Railway'de ayrı yüklenir)
+backend/models/*.p
+backend/models/*.pkl
+backend/models/*.h5
+backend/models/*.joblib
+*.model
+
+# Logs
+*.log
+logs/
+backend/logs/
+frontend/logs/
+
+# Temporary Files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Railway
+.railway/
+
+# Git
+.git/
+.gitignore.bak
+
+# Documentation Build
+docs/_build/
+docs/build/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# Large Media Files (İşaret dili görselleri hariç)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.flv
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Cache Directories
+.cache/
+cache/
+
+# Test Coverage
+coverage/
+.nyc_output/
+
+# Build Artifacts
+build/
+dist/
+out/
+
+# Node Modules (Frontend)
+frontend/node_modules/
+
+# Python Cache (Backend)
+backend/__pycache__/
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+backend/.Python
+backend/build/
+backend/develop-eggs/
+backend/dist/
+backend/downloads/
+backend/eggs/
+backend/.eggs/
+backend/lib/
+backend/lib64/
+backend/parts/
+backend/sdist/
+backend/var/
+backend/wheels/
+backend/*.egg-info/
+backend/.installed.cfg
+backend/*.egg
+
+# Virtual Environment
+backend/venv/
+backend/env/
+backend/ENV/
+backend/env.bak/
+backend/venv.bak/
+
+# Debug Files
+debug_frames/
+backend/debug_frames/
+
+# Railway Specific
+railway.json.bak
+railway.env.bak
+
+# Project Specific
+# İşaret dili görselleri public klasöründe tutulur (Git'e eklenir)
+# Model dosyaları Railway'de ayrı yüklenir
+# Environment variables Railway dashboard'da ayarlanır

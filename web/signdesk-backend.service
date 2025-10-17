@@ -1,0 +1,67 @@
+[Unit]
+Description=SignDesk Backend API Service - Optimized Multi-Worker
+After=network.target redis-server.service
+Wants=redis-server.service
+
+[Service]
+Type=notify
+User=signdesk
+Group=signdesk
+WorkingDirectory=/opt/signdesk/backend
+Environment=PATH=/opt/signdesk/venv/bin
+Environment=FLASK_ENV=production
+Environment=PORT=5001
+Environment=GUNICORN_WORKERS=4
+Environment=MPLCONFIGDIR=/tmp/matplotlib-cache
+Environment=MPLBACKEND=Agg
+EnvironmentFile=/opt/signdesk/backend/production.env
+
+# Use direct gunicorn command with WSGI
+ExecStartPre=/bin/mkdir -p /tmp/matplotlib-cache
+ExecStartPre=/bin/chmod 777 /tmp/matplotlib-cache
+ExecStart=/opt/signdesk/venv/bin/gunicorn --config gunicorn.config.py app:app
+
+# Graceful restart
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+KillSignal=SIGTERM
+TimeoutStopSec=30
+
+# Auto restart on failure
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=signdesk-backend
+
+# Security settings (hardened)
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/opt/signdesk/backend
+ReadWritePaths=/opt/signdesk/logs
+ReadWritePaths=/tmp
+ReadWritePaths=/dev/shm
+
+# Additional security
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+RestrictNamespaces=true
+LockPersonality=true
+PrivateDevices=true
+
+# Resource limits (optimized for 4GB RAM)
+LimitNOFILE=65536
+LimitNPROC=512
+MemoryMax=3G
+MemoryHigh=2.5G
+CPUQuota=400%
+
+# OOM protection
+OOMScoreAdjust=-500
+
+[Install]
+WantedBy=multi-user.target
