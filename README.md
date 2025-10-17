@@ -1,4 +1,4 @@
-# 🤟 Turkcell SignDesk - Türk İşaret Dili Uygulaması
+# 🤟 Turkcell SignDesk - İşaret Dili Uygulaması
 
 **İşitme engelli bireylerin iletişimini kolaylaştırmak için geliştirilmiş, gerçek zamanlı işaret dili tanıma ve çeviri uygulaması.**
 
