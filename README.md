@@ -752,10 +752,10 @@ Bu projeyi mümkün kılan teknolojiler ve kütüphaneler:
 
 <div align="center">
 
-**Turkcell SignDesk ile iletişimin önündeki engelleri kaldırıyoruz! 🤟**
+**Turkcell SignDesk ile iletişimin önündeki engelleri kaldırıyoruz!**
 
 Made with ❤️ by Nisasu Bozkurt, Rukiye Uçar & Özge Solmaz
 
-[⬆ Başa Dön](#-turkcell-signdesk---türk-işaret-dili-uygulaması)
+<img width="70" height="70" alt="logo" src="https://github.com/user-attachments/assets/66af7fd3-8047-452b-b139-2794654a03d8" />
 
 </div>
