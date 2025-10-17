@@ -92,9 +92,15 @@
 
 > **Not**: Aşağıdaki bölüme ekran görüntülerini ekleyebilirsiniz.
 
+<img width="1366" height="852" alt="image-9" src="https://github.com/user-attachments/assets/2902aa61-c94b-41a7-8792-63c6cf977935" />
+
 ### Ana Ekran - İşaret Dili Tanıma
+
+<img width="1366" height="514" alt="image-10" src="https://github.com/user-attachments/assets/382d3a56-1c7c-459e-8d1f-f78ca7701820" />
+<img width="1366" height="514" alt="image-11" src="https://github.com/user-attachments/assets/7cb2bae8-11f2-450d-a1f3-970d8f6e1a67" />
+<img width="1366" height="514" alt="image-12" src="https://github.com/user-attachments/assets/0ea25f3f-93e1-458a-94d8-5bb36a0002ae" />
+
 ```
-[Buraya ana ekran görüntüsünü ekleyin]
 - Webcam görüntüsü
 - El algılama gösterimi
 - Tanınan harf ve güven skoru
@@ -102,8 +108,13 @@
 ```
 
 ### Metin → İşaret Dili Modu
+<img width="1366" height="514" alt="image-13" src="https://github.com/user-attachments/assets/caae5060-a091-44e6-9741-4e4651a88dd6" />
+<img width="1366" height="514" alt="image-14" src="https://github.com/user-attachments/assets/3a810714-253d-4301-8638-78f7a55221ed" />
+<img width="1366" height="514" alt="image" src="https://github.com/user-attachments/assets/332082ba-f408-4a87-805b-841d59e88628" />
+<img width="1366" height="514" alt="image-15" src="https://github.com/user-attachments/assets/cbf09d88-cde5-451a-9e48-edc7d87ea3dd" />
+
+
 ```
-[Buraya metin-işaret dili ekranını ekleyin]
 - Metin giriş alanı
 - İşaret dili animasyonları
 - Hız kontrolü
